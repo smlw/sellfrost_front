@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style></style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "libs/owl.carousel/dist/assets/owl.carousel.min.css", false, "all" );</script>
+	<script>loadCSS( "libs/Magnific-Popup-master/dist/magnific-popup.css", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="css/header.min.css">
+	</noscript>
+
+</head>
+
+<body>
+	<nav id="menu_menu" class="hidden-sm hidden-md hidden-lg">
+		<h2>Меню</h2>
+		<ul>
+			<a href="#" class="mainActive"><li>Главное меню</li></a>
+			<a href="#"><li>О компании</li></a>
+			<a href="#"><li>Доставка</li></a>
+			<a href="#"><li>Контакты</li></a>
+			<a href="#"><li>Оплата</li></a>
+			<a href="#"><li>Акции</li></a>
+		</ul>
+		<ul>
+			<a href="#" class="mainActive"><li>Категории</li></a>
+			<a href="#"><li>Кондиционеирование</li></a>
+			<a href="#"><li>Вентияция</li></a>
+			<a href="#"><li>Отполение</li></a>
+			<a href="#"><li>Водоснабжение</li></a>
+			<a href="#"><li>Теплогенераторы Пушки завесы</li></a>
+			<a href="#"><li>Камины мойки увлажнители</li></a>
+		</ul>
+		<ul>
+			<a href="#" class="mainActive"><li>Услуги</li></a>
+			<a href="#"><li>Монтаж</li></a>
+			<a href="#"><li>Подбор</li></a>
+		</ul>
+		<ul class="">
+			<a href="#" class="mainActive"><li>Наши номера</li></a>
+			<a href="#"><li>+7 (985) 012 00 02</li></a>
+			<a href="#"><li>+7 (495) 211 71 34</li></a>
+		</ul>
+	</nav>
+
+	<header class="fixed-header hidden-sm hidden-md hidden-lg" id="main_main">
+		<div class="btn-hamburger js-slideout-toggle">
+			<article>Открыть меню</article>
+		</div>
+		<aside class="logo">
+			<span>Sell</span>Frost
+		</aside>
+	</header>
+
+	<header class="headPage flex hidden-xs">
+		<div class="container-fluid">
+			<div class="container">
+				<section class="mainMenu">
+					<nav class="pageMenu">
+						<div itemscope itemtype="http://schema.org/Thing">
+							<ul>
+								<a href="#selectCity" class="active open-popup-link">
+									<span>Москва</span>
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M7,10L12,15L17,10H7Z" /></svg>
+								</a>
+									<a href="#" itemprop="url"><li>О компании</li></a>
+									<a href="#" itemprop="url"><li>Доставка</li></a>
+									<a href="#" itemprop="url"><li>Контакты</li></a>
+									<a href="#" itemprop="url"><li>Оплата</li></a>
+									<a href="#" itemprop="url"><li>Акции</li></a>
+								</ul>
+							</div>
+						</nav>
+						<div class="darken-bg"></div>
+					</section>
+					<section class="cart">
+						<a href="#test-popup" class="hidden-sm hidden-xs open-popup-link">Нашли дешевле?</a>
+						<ul>
+							<a href="<?= $shopping_cart; ?>">
+								<li>
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="15" height="15" viewBox="0 0 24 24">
+										<path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z">
+										</svg>
+										<span id="basket_count"><?= $basket_count ?></span>
+										Товаров
+									</li>
+								</a>
+								<a href="<?= $shopping_cart; ?>">
+									<li>
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="15" height="15" viewBox="0 0 24 24"><path d="M3,22V8H7V22H3M10,22V2H14V22H10M17,22V14H21V22H17Z"></svg>
+										<?= $compare; ?>
+										Сравнение
+									</li>
+								</a>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</header>
+
+			<section class="subHeader hidden-xs">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-2 col-md-2">
+							<section>
+								<aside class="logo">
+									<a href="/"><span>Sell</span>Frost</a>
+								</aside>
+							</section>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<section>
+								<input class="bordered-input" type="search" placeholder="Поиск">
+								<div class="loop">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 451 451" xml:space="preserve" width="16" height="16">
+										<path d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3   s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4   C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3   s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z">
+										</svg>
+									</div>
+								</section>
+							</div>
+
+							<div class="col-sm-5 col-md-4 col-lg-3 col-sm-offset-1 col-md-offset-3 col-lg-offset-4">
+								<section class="contactData">
+									<div itemscope itemtype="http://schema.org/Organization">
+										<div class="hidden">
+											<span itemprop="name" >SellFrost</span>	
+											<div itemscope itemtype="http://schema.org/PostalAddress" itemprop="address">
+												<span itemprop="streetAddress">Химки, ул. Ленинградская д.1, кор.В</span>
+												<span itemprop="postalCode ">141400</span>
+												<span itemprop="addressLocality ">Москва</span>
+											</div>
+										</div>
+										<span itemprop="telephone">+7 (495) 211 71 34</span>
+										<span itemprop="faxNumber">+7 (985) 012 00 02</span>
+										<div class="hidden">
+											<span itemprop="email">moscow@sellfrost.ru</span>
+										</div>
+									</div>
+									<div>
+										<span>9:00 - 21:00 </span>
+										<span><a href="#">Перезвоните мне</a></span>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="navCategories hidden-xs">
+					<div class="container">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="flex">
+									<section>
+										<a href="#">
+											<aside></aside>
+											<div><img src="img/m1-2.png" alt=""></div>
+											<span>Кондиционирование</span>
+										</a>
+										<div class="sub-menu">
+											<div class="sub-item">
+												<h2><a href="#">Сплит-системы</a></h2>
+												<ul>
+													<li><a href="#">Настенные сплит системы</a></li>
+													<li><a href="#">Кассетные сплит системы</a></li>
+													<li><a href="#">Колонные сплит системы</a></li>
+													<li><a href="#">Канальные сплит системы</a></li>
+													<li><a href="#">Мальтисплит системы</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Кондиционеры</a></h2>
+												<ul>
+													<li><a href="#">Мобильные кондиционеры</a></li>
+													<li><a href="#">Кондиционеры без наружного блока</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Системы Zubadan</a></h2>
+												<ul>
+													<li><a href="#">Настенные сплит системы</a></li>
+													<li><a href="#">Кассетные сплит системы</a></li>
+													<li><a href="#">Колонные сплит системы</a></li>
+													<li><a href="#">Канальные сплит системы</a></li>
+													<li><a href="#">Мальтисплит системы</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Фанкойлы</a></h2>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Чиллеры</a></h2>
+												<ul>
+													<li><a href="#">Настенные сплит системы</a></li>
+													<li><a href="#">Кассетные сплит системы</a></li>
+													<li><a href="#">Мальтисплит системы</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">VRF системы</a></h2>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Внешние и внутренниые блоки</a></h2>
+												<ul>
+													<li><a href="#">Настенные сплит системы</a></li>
+													<li><a href="#">Кассетные сплит системы</a></li>
+													<li><a href="#">Колонные сплит системы</a></li>
+													<li><a href="#">Канальные сплит системы</a></li>
+													<li><a href="#">Мальтисплит системы</a></li>
+													<li><a href="#">Настенные сплит системы</a></li>
+													<li><a href="#">Кассетные сплит системы</a></li>
+													<li><a href="#">Колонные сплит системы</a></li>
+													<li><a href="#">Канальные сплит системы</a></li>
+													<li><a href="#">Мальтисплит системы</a></li>
+												</ul>
+											</div>
+										</div>
+									</section>
+									<section>
+										<a href="#">
+											<aside></aside>
+											<div><img src="img/m2-1.png" alt=""></div>
+											<span>Вентияция</span>
+										</a>
+										<div class="sub-menu">
+											<div class="sub-item">
+												<h2><a href="#">Сплит-системы</a></h2>
+												<ul>
+													<li><a href="#">Настенные сплит системы</a></li>
+													<li><a href="#">Канальные сплит системы</a></li>
+													<li><a href="#">Мальтисплит системы</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Кондиционеры</a></h2>
+												<ul>
+													<li><a href="#">Мобильные кондиционеры</a></li>
+													<li><a href="#">Кондиционеры без наружного блока</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Системы Zubadan</a></h2>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Фанкойлы</a></h2>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Чиллеры</a></h2>
+												<ul>
+													<li><a href="#">Настенные сплит системы</a></li>
+													<li><a href="#">Кассетные сплит системы</a></li>
+													<li><a href="#">Мальтисплит системы</a></li>
+													<li><a href="#">Колонные сплит системы</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">VRF системы</a></h2>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Внешние и внутренниые блоки</a></h2>
+												<ul>
+													<li><a href="#">Настенные сплит системы</a></li>
+													<li><a href="#">Кассетные сплит системы</a></li>
+													<li><a href="#">Колонные сплит системы</a></li>
+													<li><a href="#">Канальные сплит системы</a></li>
+													<li><a href="#">Мальтисплит системы</a></li>
+													<li><a href="#">Настенные сплит системы</a></li>
+												</ul>
+											</div>
+										</div>
+									</section>
+									<section>
+										<a href="#">
+											<aside></aside>
+											<div><img src="img/m3-1.png" alt=""></div>
+											<span>Отполение</span>
+										</a>
+										<div class="sub-menu">
+											<div class="sub-item">
+												<h2><a href="#">Сплит-системы</a></h2>
+												<ul>
+													<li><a href="#">Мальтисплит системы</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Кондиционеры</a></h2>
+												<ul>
+													<li><a href="#">Мобильные кондиционеры</a></li>
+													<li><a href="#">Кондиционеры без наружного блока</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Системы Zubadan</a></h2>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Фанкойлы</a></h2>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Чиллеры</a></h2>
+												<ul>
+													<li><a href="#">Настенные сплит системы</a></li>
+													<li><a href="#">Кассетные сплит системы</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Внешние и внутренниые блоки</a></h2>
+												<ul>
+													<li><a href="#">Настенные сплит системы</a></li>
+													<li><a href="#">Мальтисплит системы</a></li>
+													<li><a href="#">Настенные сплит системы</a></li>
+												</ul>
+											</div>
+										</div>
+									</section>
+									<section>
+										<a href="#">
+											<aside></aside>
+											<div><img src="img/m7-22.png" alt=""></div>
+											<span>Водоснабжение</span>
+										</a>
+									</section>
+									<section>
+										<a href="#">
+											<aside></aside>
+											<div><img src="img/m5-2.png" alt=""></div>
+											<span>Теплогенераторы Пушки завесы</span>
+										</a>
+										<div class="sub-menu">
+											<div class="sub-item">
+												<h2><a href="#">Сплит-системы</a></h2>
+												<ul>
+													<li><a href="#">Мальтисплит системы</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Кондиционеры</a></h2>
+												<ul>
+													<li><a href="#">Мобильные кондиционеры</a></li>
+													<li><a href="#">Кондиционеры без наружного блока</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Системы Zubadan</a></h2>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Фанкойлы</a></h2>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Чиллеры</a></h2>
+												<ul>
+													<li><a href="#">Настенные сплит системы</a></li>
+													<li><a href="#">Кассетные сплит системы</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Внешние и внутренниые блоки</a></h2>
+												<ul>
+													<li><a href="#">Настенные сплит системы</a></li>
+													<li><a href="#">Мальтисплит системы</a></li>
+													<li><a href="#">Настенные сплит системы</a></li>
+												</ul>
+											</div>
+										</div>
+									</section>
+									<section>
+										<a href="#">
+											<aside></aside>
+											<div>	<img src="img/m6-1.png" alt=""> </div>
+											<span>камины мойки увлажнители</span>
+										</a>
+										<div class="sub-menu">
+											<div class="sub-item">
+												<h2><a href="#">Сплит-системы</a></h2>
+												<ul>
+													<li><a href="#">Мальтисплит системы</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Кондиционеры</a></h2>
+												<ul>
+													<li><a href="#">Мобильные кондиционеры</a></li>
+													<li><a href="#">Кондиционеры без наружного блока</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Системы Zubadan</a></h2>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Фанкойлы</a></h2>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Чиллеры</a></h2>
+												<ul>
+													<li><a href="#">Настенные сплит системы</a></li>
+													<li><a href="#">Кассетные сплит системы</a></li>
+												</ul>
+											</div>
+											<div class="sub-item">
+												<h2><a href="#">Внешние и внутренниые блоки</a></h2>
+												<ul>
+													<li><a href="#">Настенные сплит системы</a></li>
+													<li><a href="#">Мальтисплит системы</a></li>
+													<li><a href="#">Настенные сплит системы</a></li>
+												</ul>
+											</div>
+										</div>
+									</section>
+
+									<section class="miniNav">
+										<article>
+											<div class="circle circle-green">
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M22.7,19L13.6,9.9C14.5,7.6 14,4.9 12.1,3C10.1,1 7.1,0.6 4.7,1.7L9,6L6,9L1.6,4.7C0.4,7.1 0.9,10.1 2.9,12.1C4.8,14 7.5,14.5 9.8,13.6L18.9,22.7C19.3,23.1 19.9,23.1 20.3,22.7L22.6,20.4C23.1,20 23.1,19.3 22.7,19Z" /></svg>
+											</div>
+											<span>Монтаж</span>
+										</article>
+										<article>
+											<div class="circle circle-red">
+												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M17,17H15V13H17M13,17H11V7H13M9,17H7V10H9M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z" /></svg>
+											</div>
+											<span>Подбор</span>
+										</article>
+									</section>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="pageSlider">
+					<div class="container">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="owl-carousel">
+									<div class="item">
+										<div class="col-sm-5 col-md-5 col-md-offset-1">
+											<div class="imgContainer">
+												<img src="img/slider/kond1.png" alt="">
+											</div>
+										</div>
+										<div class="col-md-4 col-md-offset-1">
+											<h4>Скидки -10%</h4>
+											<h1>Whirlpool AMD 355</h1>
+											<article>
+												<span>Большой информативный дисплей (отключаемый), приятный внешний вид, хорошие рабочие характеристики  </span>
+												<div class="cost">31 900 руб. <span>31 900 руб.</span></div>
+												<button class="button btn-blue bth-shadow">Купить сейчас</button>
+											</article>
+										</div>
+									</div>
+									<div class="item">
+										<div class="col-sm-5 col-md-5 col-md-offset-1">
+											<div class="imgContainer">
+												<img src="img/slider/kond1.png" alt="">
+											</div>
+										</div>
+										<div class="col-md-4 col-md-offset-1">
+											<h4>Скидки -10%</h4>
+											<h1>Whirlpool AMD 355</h1>
+											<article>
+												<span>Большой информативный дисплей (отключаемый), приятный внешний вид, хорошие рабочие характеристики  </span>
+												<div class="cost">31 900 руб. <span>31 900 руб.</span></div>
+												<button class="button btn-blue bth-shadow">Купить сейчас</button>
+											</article>
+										</div>
+									</div>
+								</div>							
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="hitsMain">
+					<div class="container">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-6"><h2>Хиты продаж</h2></div>
+							</div>
+							<div class="row">
+								<div class="owl-carousel">
+									<div class="item">
+										<div class="col-sm-6 col-md-3 col-lg-3 hidden-xs hidden-sm">
+											<section class="test">
+												<article>
+													<img src="img/goodHits/Rectangle1.png" alt="">
+												</article>
+												<aside>Настенные сплит-системы</aside>
+												<h3>Aero ARS-07IH11D6-01 / ARS-07OH11D6-01</h3>
+												<div class="status">
+													<div class="stars">
+														<ul class="rating-static clearfix">
+															<li class="current">
+																<span class="star1"></span>
+															</li>
+															<li><span class="star2"></span></li>
+															<li><span class="star3"></span></li>
+															<li><span class="star4"></span></li>
+															<li><span class="star5"></span></li>
+														</ul>
+													</div>
+													<div class="availability green">В наличии</div>
+												</div>
+												<div class="info">
+													<div class="cost">19 552 руб.</div>
+													<div class="goodId">id: <span>4624389</span></div>
+												</div>
+												<button class="btn-blue addButton">В корзиину test</button>
+											</section>
+										</div>								
+										<div class="col-sm-6 col-md-3 col-lg-3 hidden-xs hidden-sm">
+											<section class="test">
+												<article>
+													<img src="img/goodHits/Rectangle2.png" alt="">
+												</article>
+												<aside>Кассетные сплит-системы</aside>
+												<h3>Ballu BCAL-18HN1</h3>
+												<div class="status">
+													<div class="stars">
+														<ul class="rating clearfix">
+															<li class="current">
+																<span class="star1"></span>
+															</li>
+															<li><span class="star2"></span></li>
+															<li><span class="star3"></span></li>
+															<li><span class="star4"></span></li>
+															<li><span class="star5"></span></li>
+														</ul>
+													</div>
+													<div class="availability green">В наличии</div>
+												</div>
+												<div class="info">
+													<div class="cost">44 000 руб.</div>
+													<div class="goodId">id: <span>7223480</span></div>
+												</div>
+												<button class="btn-blue addButton">В корзиину</button>
+											</section>
+										</div>
+										<div class="col-sm-6 col-md-3 col-lg-3 hidden-xs">
+											<section class="test">
+												<article>
+													<img src="img/goodHits/Rectangle3.png" alt="">
+												</article>
+												<aside>Бойлеры</aside>
+												<h3>Nibe BU-100.8</h3>
+												<div class="status">
+													<div class="stars">
+														<ul class="rating clearfix">
+															<li class="current">
+																<span class="star1"></span>
+															</li>
+															<li><span class="star2"></span></li>
+															<li><span class="star3"></span></li>
+															<li><span class="star4"></span></li>
+															<li><span class="star5"></span></li>
+														</ul>
+													</div>
+													<div class="availability orange">Под заказ</div>
+												</div>
+												<div class="info">
+													<div class="cost">26 100 руб.</div>
+													<div class="goodId">id: <span>4097045</span></div>
+												</div>
+												<button class="btn-blue">В корзиину</button>
+											</section>
+										</div>
+										<div class="col-sm-6 col-md-3 col-lg-3">
+											<section class="test">
+												<article>
+													<img src="img/goodHits/Rectangle4.png" alt="">
+												</article>
+												<aside>Маслонаполненные радиаторы</aside>
+												<h3>Ballu Classic BOH/CL-05WEN 1000</h3>
+												<div class="status">
+													<div class="stars">
+														<ul class="rating clearfix">
+															<li class="current">
+																<span class="star1"></span>
+															</li>
+															<li><span class="star2"></span></li>
+															<li><span class="star3"></span></li>
+															<li><span class="star4"></span></li>
+															<li><span class="star5"></span></li>
+														</ul>
+													</div>
+													<div class="availability red">Нет наличии</div>
+												</div>
+												<div class="info">
+													<div class="cost">19 552 руб.</div>
+													<div class="goodId">id: <span>4624389</span></div>
+												</div>
+												<button class="btn-blue">В корзиину</button>
+											</section>
+										</div>
+									</div>
+									<div class="item">
+										<div class="col-sm-6 col-md-3 col-lg-3 hidden-xs hidden-sm">
+											<section class="test">
+												<article>
+													<img src="img/m1-2.png" alt="">
+												</article>
+												<aside>Настенные сплит-системы</aside>
+												<h3>Aero ARS-07IH11D6-01</h3>
+												<div class="status">
+													<div class="stars">
+														<ul class="rating clearfix">
+															<li class="current">
+																<span class="star1"></span>
+															</li>
+															<li><span class="star2"></span></li>
+															<li><span class="star3"></span></li>
+															<li><span class="star4"></span></li>
+															<li><span class="star5"></span></li>
+														</ul>
+													</div>
+													<div class="availability green">В наличии</div>
+												</div>
+												<div class="info">
+													<div class="cost">19 552 руб.</div>
+													<div class="goodId">id: <span>4624389</span></div>
+												</div>
+												<button class="btn-blue">В корзиину</button>
+											</section>
+										</div>
+										<div class="col-sm-6 col-md-3 col-lg-3 hidden-xs hidden-sm">
+											<section class="test">
+												<article>
+													<img src="img/m1-2.png" alt="">
+												</article>
+												<aside>Настенные сплит-системы</aside>
+												<h3>Aero ARS-07IH11D6-01</h3>
+												<div class="status">
+													<div class="stars">
+														<ul class="rating clearfix">
+															<li class="current">
+																<span class="star1"></span>
+															</li>
+															<li><span class="star2"></span></li>
+															<li><span class="star3"></span></li>
+															<li><span class="star4"></span></li>
+															<li><span class="star5"></span></li>
+														</ul>
+													</div>
+													<div class="availability">В наличии</div>
+												</div>
+												<div class="info">
+													<div class="cost">19 552 руб.</div>
+													<div class="goodId">id: <span>4624389</span></div>
+												</div>
+												<button class="btn-blue buttonAdd" >В корзиину</button>
+											</section>
+										</div>
+										<div class="col-sm-6 col-md-3 col-lg-3 hidden-xs">
+											<section class="test">
+												<article>
+													<img src="img/m1-2.png" alt="">
+												</article>
+												<aside>Настенные сплит-системы</aside>
+												<h3>Aero ARS-07IH11D6-01</h3>
+												<div class="status">
+													<div class="stars">
+														<ul class="rating cl	earfix">
+															<li class="current">
+																<span class="star1"></span>
+															</li>
+															<li><span class="star2"></span></li>
+															<li><span class="star3"></span></li>
+															<li><span class="star4"></span></li>
+															<li><span class="star5"></span></li>
+														</ul>
+													</div>
+													<div class="availability">В наличии</div>
+												</div>
+												<div class="info">
+													<div class="cost">19 552 руб.</div>
+													<div class="goodId">id: <span>4624389</span></div>
+												</div>
+												<button class="btn-blue">В корзиину</button>
+											</section>
+										</div>
+										<div class="col-sm-6 col-md-3 col-lg-3">
+											<section class="test">
+												<article>
+													<img src="img/m1-2.png" alt="">
+												</article>
+												<aside>Настенные сплит-системы</aside>
+												<h3>Aero ARS-07IH11D6-01</h3>
+												<div class="status">
+													<div class="stars">
+														<ul class="rating clearfix">
+															<li class="current">
+																<span class="star1"></span>
+															</li>
+															<li><span class="star2"></span></li>
+															<li><span class="star3"></span></li>
+															<li><span class="star4"></span></li>
+															<li><span class="star5"></span></li>
+														</ul>
+													</div>
+													<div class="availability">В наличии</div>
+												</div>
+												<div class="info">
+													<div class="cost">19 552 руб.</div>
+													<div class="goodId">id: <span>4624389</span></div>
+												</div>
+												<button class="btn-blue">В корзиину</button>
+											</section>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="monDef">
+					<div class="container">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-sm-6 col-md-4 col-md-offset-1">
+									<h3>Монтаж</h3>
+									<article>
+										Мы также предоставляем услуги монтажа кондиционеров, вентиляции, систем дымоудаления, систем отопления, систем водоснабжения, канализационных систем.
+									</article>
+									<a href="#"><button class="btn-blue bth-shadow">Подробнее</button></a>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</section>	
+
+				<section class="hitsMain mob_hits">
+					<div class="container">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-12"><h2>Новинки</h2></div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3">
+									<section class="inBasket test">
+										<aside class="steaker">New</aside>
+										<article>
+											<img src="img/Newwns/spritesheet1.png" alt="">
+										</article>
+										<aside>Тепловые пушки</aside>
+										<h3 class="gray">Lessar LV-FHUA-1-L1</h3>
+										<div class="status">
+											<div class="stars">
+												<ul class="rating clearfix">
+													<li class="current">
+														<span class="star1"></span>
+													</li>
+													<li><span class="star2"></span></li>
+													<li><span class="star3"></span></li>
+													<li><span class="star4"></span></li>
+													<li><span class="star5"></span></li>
+												</ul>
+											</div>
+											<div class="availability green">В наличии</div>
+										</div>
+										<div class="info">
+											<div class="cost">31 490 руб.</div>
+											<div class="goodId">id: <span>4624389</span></div>
+										</div>
+										<button class="btn-green ">
+											<span>Товар в корзине</span>
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20">
+												<path  d="M 28.28125 6.28125 L 11 23.5625 L 3.71875 16.28125 L 2.28125 17.71875 L 10.28125 25.71875 L 11 26.40625 L 11.71875 25.71875 L 29.71875 7.71875 L 28.28125 6.28125 z"24" overflow="visible" font-family="Bitstream Vera Sans"/>
+											</svg>
+										</button>
+									</section>
+								</div>
+								<div class="col-sm-12 col-md-3">
+									<section class="test lowTest">
+										<aside class="steaker">New</aside>
+										<article>
+											<img src="img/Newwns/spritesheet2.png" alt="">
+										</article>
+										<div class="lowInfo">
+											<aside>Водяные воздухонагревательные</aside>
+											<h3>Volcano V25</h3>
+											<div class="status">
+												<div class="stars">
+													<ul class="rating clearfix">
+														<li class="current">
+															<span class="star1"></span>
+														</li>
+														<li><span class="star2"></span></li>
+														<li><span class="star3"></span></li>
+														<li><span class="star4"></span></li>
+														<li><span class="star5"></span></li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<div class="cost">22 003 руб.</div>
+											</div>
+										</div>
+										<button class="btn-blue ">В корзиину</button>
+									</section>
+									<section class="test lowTest">
+										<aside class="steaker">New</aside>
+										<article>
+											<img src="img/Newwns/spritesheet3.png" alt="">
+										</article>
+										<div class="lowInfo">
+											<aside>Настенные сплит-системы</aside>
+											<h3>Комплект креплений Wing 100</h3>
+											<div class="status">
+												<div class="stars">
+													<ul class="rating clearfix">
+														<li class="current">
+															<span class="star1"></span>
+														</li>
+														<li><span class="star2"></span></li>
+														<li><span class="star3"></span></li>
+														<li><span class="star4"></span></li>
+														<li><span class="star5"></span></li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<div class="cost">19 552 руб.</div>
+											</div>
+										</div>
+										<button class="btn-blue ">В корзиину</button>
+									</section>
+								</div>
+								<div class="col-sm-12 col-md-3">
+									<section class="test lowTest">
+										<aside class="steaker">New</aside>
+										<article>
+											<img src="img/Newwns/spritesheet4.png" alt="">
+										</article>
+										<div class="lowInfo">
+											<aside>Настенные сплит-системы</aside>
+											<h3>Volcano</h3>
+											<div class="status">
+												<div class="stars">
+													<ul class="rating clearfix">
+														<li class="current">
+															<span class="star1"></span>
+														</li>
+														<li><span class="star2"></span></li>
+														<li><span class="star3"></span></li>
+														<li><span class="star4"></span></li>
+														<li><span class="star5"></span></li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<div class="cost">19 552 руб.</div>
+											</div>
+										</div>
+										<button class="btn-blue ">В корзиину</button>
+									</section>
+									<section class="test lowTest">
+										<aside class="steaker">New</aside>
+										<article>
+											<img src="img/Newwns/spritesheet5.png" alt="">
+										</article>
+										<div class="lowInfo">
+											<aside>Тепловентеляторы</aside>
+											<h3>Lessar LV-FHU 2000</h3>
+											<div class="status">
+												<div class="stars">
+													<ul class="rating clearfix">
+														<li class="current">
+															<span class="star1"></span>
+														</li>
+														<li><span class="star2"></span></li>
+														<li><span class="star3"></span></li>
+														<li><span class="star4"></span></li>
+														<li><span class="star5"></span></li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<div class="cost">19 552 руб.</div>
+											</div>
+										</div>
+										<button class="btn-blue ">В корзиину</button>
+									</section>
+								</div>
+								<div class="col-sm-12 col-md-3">
+									<section class="test lowTest">
+										<aside class="steaker">New</aside>
+										<article>
+											<img src="img/Newwns/spritesheet6.png" alt="">
+										</article>
+										<div class="lowInfo">
+											<aside>Настенные сплит-системы</aside>
+											<h3>Volcano</h3>
+											<div class="status">
+												<div class="stars">
+													<ul class="rating clearfix">
+														<li class="current">
+															<span class="star1"></span>
+														</li>
+														<li><span class="star2"></span></li>
+														<li><span class="star3"></span></li>
+														<li><span class="star4"></span></li>
+														<li><span class="star5"></span></li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<div class="cost">19 552 руб.</div>
+											</div>
+										</div>
+										<button class="btn-blue ">В корзиину</button>
+									</section>
+									<section class="test lowTest">
+										<article>
+											<img src="img/Newwns/spritesheet7.png" alt="">
+										</article>
+										<div class="lowInfo">
+											<aside>Воздушные завесы</aside>
+											<h3>VTS WING E200</h3>
+											<div class="status">
+												<div class="stars">
+													<ul class="rating clearfix">
+														<li class="current">
+															<span class="star1"></span>
+														</li>
+														<li><span class="star2"></span></li>
+														<li><span class="star3"></span></li>
+														<li><span class="star4"></span></li>
+														<li><span class="star5"></span></li>
+													</ul>
+												</div>
+											</div>
+											<div class="info">
+												<div class="cost">19 552 руб.</div>
+											</div>
+										</div>
+										<button class="btn-blue ">В корзиину</button>
+									</section>
+								</div>
+								<div class="col-md-3"></div>
+								<div class="col-md-3"></div>
+							</div> 
+						</div>
+					</div>
+				</section>			
+
+				<section class="hitsMain actNew">
+					<div class="container">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-6"><h2>Акции</h2></div>
+								<div class="col-md-6"><a href="#" class="showAllButton">Посмотреть всё</a></div>
+							</div>
+							<div class="row">	
+								<div class="col-md-12">
+									<article>
+										<img src="img/Actions/Rectangle1.png" alt="">
+										<div class="date">26 ноября</div>
+										<div class="decription">Налетай забирай!</div>
+									</article>
+									<article>
+										<img src="img/Actions/Rectangle2.png" alt="">
+										<div class="date">6 ноября</div>
+										<div class="decription">Are You Ready To Buy A Home Theater Audio System</div>
+									</article>
+									<article>
+										<img src="img/Actions/Rectangle3.png" alt="">
+										<div class="date">26 ноября</div>
+										<div class="decription">Choosing The Best Audio Player Software For Your Computer</div>
+									</article>
+									<article>
+										<img src="img/Actions/Rectangle4.png" alt="">
+										<div class="date">26 ноября</div>
+										<div class="decription">Guidelines for inject cartibridge refill</div>
+									</article>
+									<article>
+										<img src="img/Actions/Rectangle5.png" alt="">
+										<div class="date">26 ноября</div>
+										<div class="decription">Are You Ready To Buy A Home Theater Audio System</div>
+									</article>
+									<article>
+										<img src="img/Actions/Rectangle6.png" alt="">
+										<div class="date">1 сентября</div>
+										<div class="decription">Choosing The Best Audio Player Software For Your Computer</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="hitsMain actNew">
+					<div class="container">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-6"><h2>Новости</h2></div>
+								<div class="col-md-6"><a href="#" class="showAllButton">Посмотреть всё</a></div>
+							</div>
+							<div class="row">	
+								<div class="col-md-12">
+									<article>
+										<img src="img/Actions/Rectangle1.png" alt="">
+										<div class="date">26 ноября</div>
+										<div class="decription">Налетай забирай!</div>
+									</article>
+									<article>
+										<img src="img/Actions/Rectangle2.png" alt="">
+										<div class="date">6 ноября</div>
+										<div class="decription">Are You Ready To Buy A Home Theater Audio System</div>
+									</article>
+									<article>
+										<img src="img/Actions/Rectangle3.png" alt="">
+										<div class="date">26 ноября</div>
+										<div class="decription">Choosing The Best Audio Player Software For Your Computer</div>
+									</article>
+									<article>
+										<img src="img/Actions/Rectangle4.png" alt="">
+										<div class="date">26 ноября</div>
+										<div class="decription">Guidelines for inject cartibridge refill</div>
+									</article>
+									<article>
+										<img src="img/Actions/Rectangle5.png" alt="">
+										<div class="date">26 ноября</div>
+										<div class="decription">Are You Ready To Buy A Home Theater Audio System</div>
+									</article>
+									<article>
+										<img src="img/Actions/Rectangle6.png" alt="">
+										<div class="date">1 сентября</div>
+										<div class="decription">Help Finding Information Online</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="aboutMain">
+					<div class="container">
+						<div class="col-md-12" itemscope itemtype="http://schema.org/Thing">
+							<h1><span itemprop="name">SellFrost</span></h1>
+							<div class="row" itemprop="description ">
+								<div class="col-md-6">
+									Молодая инженерная компания со стремительно развивающейся географией присутствия. Наша основная аудитория конечные потребители и сегменты малого и среднего бизнеса. Для Вас мы быстро, дешево и главное качественно осуществим комплексную поставку оборудования и соответствующих расходных материалов на объект. Наши сотрудники — профессионалы своей отрасли, многолетний стаж гарантирует Ваше спокойствие и лояльность.
+								</div>
+								<div class="col-md-6">
+									Мы работаем в условиях современного рынка и стараемся отвечать быстро меняющимся и растущим запросам. Довольный клиент — наша основная задача. Доверьте рутину выбора нашим специалистам и наслаждайтесь комфортным климатом в Вашем жилище. Компания SellFrost является прямым поставщиком таких марок как: Mitsubishi Electric, Lessar, Fujitsu, Ballu, Electrolux, Tosot. Ассортимент нашей продукции дополняют воздуховоды и фасонные изделия из оцинкованной стали, разнообразные расходные материалы систем теплоснабжения и хладоснабжения, что позволит Вам остановить выбор на нас.
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<footer>
+					<div class="container">
+						<div class="col-md-12">
+							<div class="col-sm-3 col-md-3">
+								<h4>Магазин</h4>
+								<ul>
+									<a href="#">
+										<li>О компании</li>
+									</a>
+									<a href="">
+										<li>Доставка</li>
+									</a>
+									<a href="">
+										<li>Контакты</li>
+									</a>
+									<a href="">
+										<li>Оплата</li>
+									</a>
+									<a href="">
+										<li>Акции</li>
+									</a>
+									<a href="">
+										<li>Карта сайта</li>
+									</a>
+								</ul>
+							</div>
+							<div class="col-sm-4 col-md-6">
+								<h4>Слубжа поддержки</h4>
+								<ul>
+									<a href="#">
+										<li>Обратная свзяь</li>
+									</a>
+									<a href="">
+										<li>Возврат товара</li>
+									</a>							
+								</ul>
+								<h4>Юридическая информация</h4>
+								<ul>
+									<a href="#">
+										<li>Политика безопасности</li>
+									</a>
+									<a href="">
+										<li>Условия соглашения</li>
+									</a>							
+								</ul>
+							</div>
+							<div class="col-sm-5 col-md-3 littleTitle">
+								<div class="socialIcons">
+									<h4>Социальные сети</h4>
+									<a href="http://vk.com">
+										<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" height="24" viewBox="0 0 96.496 96.496" style="enable-background:new 0 0 96.496 96.496;"
+										xml:space="preserve">
+										<g>
+											<path d="M92.499,65.178c-2.873-3.446-6.254-6.387-9.453-9.51c-2.886-2.815-3.068-4.448-0.748-7.697
+											c2.532-3.546,5.255-6.956,7.81-10.486c2.385-3.299,4.823-6.589,6.078-10.539c0.796-2.513,0.092-3.623-2.485-4.063
+											c-0.444-0.077-0.903-0.081-1.355-0.081l-15.289-0.018c-1.883-0.028-2.924,0.793-3.59,2.462c-0.899,2.256-1.826,4.51-2.897,6.687
+											c-2.43,4.936-5.144,9.707-8.949,13.747c-0.839,0.891-1.767,2.017-3.169,1.553c-1.754-0.64-2.271-3.53-2.242-4.507l-0.015-17.647
+											c-0.34-2.521-0.899-3.645-3.402-4.135l-15.882,0.003c-2.12,0-3.183,0.819-4.315,2.145c-0.653,0.766-0.85,1.263,0.492,1.517
+											c2.636,0.5,4.121,2.206,4.515,4.849c0.632,4.223,0.588,8.463,0.224,12.703c-0.107,1.238-0.32,2.473-0.811,3.629
+											c-0.768,1.817-2.008,2.187-3.637,1.069c-1.475-1.012-2.511-2.44-3.525-3.874c-3.809-5.382-6.848-11.186-9.326-17.285
+											c-0.716-1.762-1.951-2.83-3.818-2.859c-4.587-0.073-9.175-0.085-13.762,0.004c-2.76,0.052-3.583,1.392-2.459,3.894
+											c4.996,11.113,10.557,21.917,17.816,31.759c3.727,5.051,8.006,9.51,13.534,12.67c6.265,3.582,13.009,4.66,20.112,4.328
+											c3.326-0.156,4.325-1.021,4.479-4.336c0.104-2.268,0.361-4.523,1.48-6.561c1.098-2,2.761-2.381,4.678-1.137
+											c0.959,0.623,1.767,1.416,2.53,2.252c1.872,2.048,3.677,4.158,5.62,6.137c2.437,2.48,5.324,3.945,8.954,3.646L93.744,75.5
+											c2.264-0.148,3.438-2.924,2.138-5.451C94.969,68.279,93.771,66.703,92.499,65.178z"/>
+										</g>
+									</svg>
+								</a>
+								<a href="http://facebook.com">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M19,4V7H17A1,1 0 0,0 16,8V10H19V13H16V20H13V13H11V10H13V7.5C13,5.56 14.57,4 16.5,4M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" /></svg>
+								</a>
+								<a href="http://twitter.com">
+									<svg enable-background="new 0 0 56.693 56.693" height="24" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"/></svg>
+								</a>
+								<a href="http://mail.ru">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M15.45,11.91C15.34,9.7 13.7,8.37 11.72,8.37H11.64C9.35,8.37 8.09,10.17 8.09,12.21C8.09,14.5 9.62,15.95 11.63,15.95C13.88,15.95 15.35,14.3 15.46,12.36M11.65,6.39C13.18,6.39 14.62,7.07 15.67,8.13V8.13C15.67,7.62 16,7.24 16.5,7.24H16.61C17.35,7.24 17.5,7.94 17.5,8.16V16.06C17.46,16.58 18.04,16.84 18.37,16.5C19.64,15.21 21.15,9.81 17.58,6.69C14.25,3.77 9.78,4.25 7.4,5.89C4.88,7.63 3.26,11.5 4.83,15.11C6.54,19.06 11.44,20.24 14.35,19.06C15.83,18.47 16.5,20.46 15,21.11C12.66,22.1 6.23,22 3.22,16.79C1.19,13.27 1.29,7.08 6.68,3.87C10.81,1.42 16.24,2.1 19.5,5.5C22.95,9.1 22.75,15.8 19.4,18.41C17.89,19.59 15.64,18.44 15.66,16.71L15.64,16.15C14.59,17.2 13.18,17.81 11.65,17.81C8.63,17.81 6,15.15 6,12.13C6,9.08 8.63,6.39 11.65,6.39Z" /></svg>
+								</a>
+							</div>
+							<h4>Подпишитесь на нас</h4>
+							<article>
+								<span>Хотите знать о акциях и новинках компании подпишитесь на нашу почтовую рассылку.</span>
+								<input class="bordered-input" type="text" placeholder="Ваш e-mail">
+								<button class="btn-green">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+								</button>
+							</article>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<div class="select-city white-popup mfp-hide" id="selectCity">
+				<h3>Выбор города</h3>
+				<section>В зависимости от выбранного города, на страницу товара и в корзине будут отображаться стоимость и сроки доставки.</section>
+				<section>
+					<input class="bordered-input" type="search" placeholder="Поиск города">
+					<div class="loop">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 451 451" xml:space="preserve" width="16" height="16">
+							<path d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3   s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4   C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3   s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z">
+							</svg>
+						</div>
+					</section>
+					<section>Всего 951 городов</section>
+					<div class="grid">
+						<div class="grid-item active">Москва</div>
+						<div class="grid-item">Московская область</div>
+						<div class="grid-item">Санкт-Петербург</div>
+						<div class="grid-item">Воронеж</div>
+						<div class="grid-item">Тверь</div>
+						<div class="grid-item">Калуга</div>
+						<div class="grid-item">Тула</div>
+						<div class="grid-item">Рязань</div>
+						<div class="grid-item">Владимир</div>
+						<div class="grid-item">Ярославль</div>
+						<div class="grid-item">Орео</div>
+						<div class="grid-item">Бранск</div>
+						<div class="grid-item">Курск</div>
+						<div class="grid-item">Белебей</div>
+						<div class="grid-item">Белово</div>
+						<div class="grid-item">Белогорск (Амурская область)</div>
+						<div class="grid-item">Белорецк</div>
+						<div class="grid-item">Белореченск</div>
+						<div class="grid-item">Бердск</div>
+						<div class="grid-item">Березники</div>
+						<div class="grid-item">Березовский (Свердловская область)</div>
+						<div class="grid-item">Бийск</div>
+						<div class="grid-item">Биробиджан</div>
+						<div class="grid-item">Благовещенск (Амурская область)</div>
+						<div class="grid-item">Бор</div>
+						<div class="grid-item">Борисоглебск</div>
+						<div class="grid-item">Боровичи</div>
+						<div class="grid-item">Братск</div>
+						<div class="grid-item">Брянск</div>
+						<div class="grid-item">Бугульма</div>
+						<div class="grid-item">Буденновск</div>
+						<div class="grid-item">Бузулук</div>
+						<div class="grid-item">Буйнакск</div>
+						<div class="grid-item">Великие Луки</div>
+						<div class="grid-item">Великий Новгород</div>
+						<div class="grid-item">Верхняя Пышма</div>
+						<div class="grid-item">Видное</div>
+						<div class="grid-item">Владивосток</div>
+						<div class="grid-item">Владикавказ</div>
+						<div class="grid-item">Владимир</div>
+						<div class="grid-item">Волгоград</div>
+					</div>
+				</div>
+
+				<div id="test-popup" class="white-popup mfp-hide callback_form" >
+					<div class="callback_form-content">
+						<h4>Нашли дешевле?</h4>
+						<div class="form_description">	
+							Lorem Ipsum
+						</div>
+						<form action="">
+							<div class="customUpload">
+								<label for="getLink">Укажите ссылку или прикрепите фото</label>
+								<input class="bordered-input" placeholder="Введите ссылку" id="getLink" type="text">
+								<label for="uploadbtn" class="uploadButton">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 34 34">
+										<path d="M 13.5 5 L 13.1875 5.40625 L 12 7 L 11 7 L 11 6 L 5 6 L 5 7 L 4 7 L 3 7 L 3 8 L 3 25 L 3 26 L 4 26 L 28 26 L 29 26 L 29 25 L 29 8 L 29 7 L 28 7 L 24 7 L 22.8125 5.40625 L 22.5 5 L 22 5 L 14 5 L 13.5 5 z M 14.5 7 L 21.5 7 L 22.6875 8.59375 L 23 9 L 23.5 9 L 27 9 L 27 24 L 5 24 L 5 9 L 12.5 9 L 13 9 L 13.3125 8.59375 L 14.5 7 z M 8 10 C 7.4477153 10 7 10.447715 7 11 C 7 11.552285 7.4477153 12 8 12 C 8.5522847 12 9 11.552285 9 11 C 9 10.447715 8.5522847 10 8 10 z M 18 10 C 14.698136 10 12 12.698136 12 16 C 12 19.301864 14.698136 22 18 22 C 21.301864 22 24 19.301864 24 16 C 24 12.698136 21.301864 10 18 10 z M 18 12 C 20.220984 12 22 13.779016 22 16 C 22 18.220984 20.220984 20 18 20 C 15.779016 20 14 18.220984 14 16 C 14 13.779016 15.779016 12 18 12 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"/>
+									</svg>
+									Прикрепить фото
+								</label>
+								<input style="" type="file" name="upload" id="uploadbtn">
+							</div>
+							<label for="getUserName">Ваше имя</label>
+							<input class="bordered-input" id="getUserName" placeholder="Введите Ваше имя" type="text">
+							<label for="getUserEmail">Ваш Email</label>
+							<input class="bordered-input" id="getUserEmail" placeholder="Введите Ваш Email" type="email">
+							<label for="getUserComment">Добавить комментарий</label>
+							<textarea class="bordered-input" id="getUserComment" placeholder="Введите комментарий"></textarea>
+						</form>
+						<button class="btn btn-def">Отмена</button>
+						<button class="btn btn-blue">Отправить</button>
+					</div>
+				</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>
