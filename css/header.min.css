@@ -186,6 +186,28 @@ button {
     -webkit-border-radius: 25px;
     border-radius: 25px;
 }
+.button {
+    font-family: RobotoRegular, sans-serif;
+    font-size: .875em;
+    font-weight: 400;
+    color: #fff;
+    padding: 9px 33px;
+    border: none;
+    outline: 0;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+}
+.button:hover {
+    font-family: RobotoRegular, sans-serif;
+    font-size: .875em;
+    font-weight: 400;
+    color: #fff;
+    padding: 9px 33px;
+    border: none;
+    outline: 0;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+}
 button:hover {
     -webkit-transition: all .1s ease-out;
     transition: all .1s ease-out;
@@ -896,7 +918,7 @@ hr {
     -ms-align-items: center;
     align-items: center;
     padding: 40px 50px;
-    height: 260px;
+    /*height: 260px;*/
 }
 .goodInfoMain .photoGallery .mainPhoto img {
     max-width: 100%;
@@ -978,6 +1000,7 @@ hr {
 .catWrap a img {
     margin: 15px 0 0;
     max-height: 75px;
+    width: 100%;
 }
 .listPreviewMain {
     background: #F2F3F6;

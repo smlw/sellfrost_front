@@ -3770,6 +3770,7 @@ a, a:hover {
     border-top: 1px solid #dde0e7;
     padding: 0;
     margin: -8px 0 0;
+    width: 100%;
 }
 .basket .itemVeiwList {
     margin: 0;

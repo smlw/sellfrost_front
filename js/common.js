@@ -178,10 +178,6 @@ document.querySelector('.js-slideout-toggle').addEventListener('click', function
 });
 */
 
-$(".loope").imageLens({ 
-  lensSize: 200
-});
-
 $(".anotherPhoto").on("click", "a", function () {
    $(this).parent().addClass("activePhoto").siblings().removeClass("activePhoto")
    $(".mainPhoto img").attr("src", $(this).prop("href"))
