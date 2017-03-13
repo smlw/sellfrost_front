@@ -226,6 +226,16 @@ hr {
     height: 1px;
     background: #e9ebf0;
 }
+input.error {
+    border: 1px solid #ff0000!important;
+}
+label.error {
+    color: #ff0000;
+    font-weight: normal;
+    font-size: .875em;
+    margin: 0!important;
+    padding: 0!important;
+}
 .krosh {
     margin: 10px 0;
 }

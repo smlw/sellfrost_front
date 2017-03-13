@@ -243,76 +243,79 @@
 								<div class="pageCount">1</div>
 								<h3>Ваши конактные данные</h3>
 							</div>
-							<section class="stageRadio">
-								<h3>Хочу оформить заказ как:</h3>
-								<label>
-									<input class="radio" type="radio" name="radio-test">
-									<span class="radio-custom"></span>
-									<span class="label_radio">Физическое лицо</span>
-								</label>
-								<label>
-									<input class="radio" type="radio"  name="radio-test">
-									<span class="radio-custom"></span>
-									<span class="label_radio">Юридическое лицо</span>
-								</label>
-							</section>
-							<section class="stageInput">
-								<label for="">
-									<span>Имя <aside>*</aside></span>
-									<input type="text" class="bordered-input" placeholder="Имя">
-								</label>
-								<label for="">
-									<span>Фамилияa <aside>*</aside></span>
-									<input type="text" class="bordered-input" placeholder="Фамилия">
-								</label>
-								<label for="">
-									<span>Мобильный телефон</span> 
-									<input type="text" class="bordered-input" placeholder="Мобильный телефон">
-								</label>
-								<label for="">
-									<span>Email <aside>*</aside></span>
-									<input type="text" class="bordered-input" placeholder="Email">
-									<aside class="extraInfo">Мы вышлем вам необходиму информацию о заказе</aside>
-								</label>
-							</section>
-							<section class="stageInput urFace">
-								<label for="">
-									<span>Название организации <aside>*</aside></span>
-									<input type="text" class="bordered-input" placeholder="Название организации">
-								</label>
-								<label for="">
-									<span>Юридический адрес <aside>*</aside></span>
-									<input type="text" class="bordered-input" placeholder="Юридический адрес">
-								</label>
-								<label for="">
-									<span>Фактический адрес</span> 
-									<input type="text" class="bordered-input" placeholder="Фактический адрес">
-								</label>
-								<label for="">
-									<span>ИНН <aside>*</aside></span>
-									<input type="text" class="bordered-input" placeholder="ИНН">
-								</label>
-								<label for="">
-									<span>КПП <aside>*</aside></span>
-									<input type="text" class="bordered-input" placeholder="КПП">
-								</label>
-								<label for="">
-									<span>Наименование банка <aside>*</aside></span>
-									<input type="text" class="bordered-input" placeholder="Наименование банка">
-								</label>
-								<label for="">
-									<span>Р/С <aside>*</aside></span>
-									<input type="text" class="bordered-input" placeholder="Р/С">
-								</label>
-								<label for="">
-									<span>К/С <aside>*</aside></span>
-									<input type="text" class="bordered-input" placeholder="К/С">
-								</label>
-								<label for="">
-									<span>БИК <aside>*</aside></span>
-									<input type="text" class="bordered-input" placeholder="БИК">
-								</label>
-							</section>
+							<form action="#" id="delivery_form" method="post">
+								<section class="stageRadio">
+									<h3>Хочу оформить заказ как:</h3>
+									<label>
+										<input class="radio" type="radio" name="radio-test">
+										<span class="radio-custom"></span>
+										<span class="label_radio">Физическое лицо</span>
+									</label>
+									<label>
+										<input class="radio" type="radio"  name="radio-test">
+										<span class="radio-custom"></span>
+										<span class="label_radio">Юридическое лицо</span>
+									</label>
+								</section>
+								<section class="stageInput">
+									<label for="">
+										<span>Имя <aside>*</aside></span>
+										<input type="text" class="bordered-input" name="name" placeholder="Имя">
+									</label>
+									<label for="">
+										<span>Фамилия <aside>*</aside></span>
+										<input type="text" class="bordered-input" name="lastName" placeholder="Фамилия">
+									</label>
+									<label for="">
+										<span>Мобильный телефон</span> 
+										<input type="text" class="bordered-input" name="phoneNumber" data-mask="7(___)___-____" placeholder="Мобильный телефон ">
+									</label>
+									<label for="">
+										<span>Email <aside>*</aside></span>
+										<input type="text" class="bordered-input" name="email" placeholder="Email">
+										<aside class="extraInfo">Мы вышлем вам необходиму информацию о заказе</aside>
+									</label>
+								</section>
+								<section class="stageInput urFace">
+									<label for="">
+										<span>Название организации <aside>*</aside></span>
+										<input type="text" class="bordered-input" name="organizationName" placeholder="Название организации">
+									</label>
+									<label for="">
+										<span>Юридический адрес <aside>*</aside></span>
+										<input type="text" class="bordered-input" name="organizationUrAddress" placeholder="Юридический адрес">
+									</label>
+									<label for="">
+										<span>Фактический адрес</span> 
+										<input type="text" class="bordered-input" name="organizationPhisAddress" placeholder="Фактический адрес">
+									</label>
+									<label for="">
+										<span>ИНН <aside>*</aside></span>
+										<input type="text" class="bordered-input" name="organizationINN" placeholder="ИНН">
+									</label>
+									<label for="">
+										<span>КПП <aside>*</aside></span>
+										<input type="text" class="bordered-input" name="organizationKPP" placeholder="КПП">
+									</label>
+									<label for="">
+										<span>Наименование банка <aside>*</aside></span>
+										<input type="text" class="bordered-input" name="organizationBank" placeholder="Наименование банка">
+									</label>
+									<label for="">
+										<span>Р/С <aside>*</aside></span>
+										<input type="text" class="bordered-input" name="organizationPC" placeholder="Р/С">
+									</label>
+									<label for="">
+										<span>К/С <aside>*</aside></span>
+										<input type="text" class="bordered-input" name="organizationKC" placeholder="К/С">
+									</label>
+									<label for="">
+										<span>БИК <aside>*</aside></span>
+										<input type="text" class="bordered-input" name="organizationBIK" placeholder="БИК">
+									</label>
+								</section>
+								<input value="submit" type="submit">
+							</form>
 							<section class="stagePagination">
 								<button class="btn btn-def">Предыдущий шаг</button>
 								<button class="btn btn-blue">Следующий шаг</button>
@@ -335,7 +338,7 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-				<section class="stageBasket sticky_fixed" >
+					<section class="stageBasket sticky_fixed" >
 						<header>
 							<h2>Ваша корзина</h2>
 							<a href="#" class="btn btn-def">Редактировать</a>
