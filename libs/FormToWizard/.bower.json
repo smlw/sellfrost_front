@@ -1,0 +1,14 @@
+{
+  "name": "FormToWizard",
+  "homepage": "https://github.com/pierre-r/FormToWizard",
+  "_release": "c04cc3416f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c04cc3416f24a23970098b45a28355d145116ef0"
+  },
+  "_source": "https://github.com/pierre-r/FormToWizard.git",
+  "_target": "*",
+  "_originalSource": "pierre-r/FormToWizard",
+  "_direct": true
+}

@@ -239,87 +239,204 @@
 				<div class="col-md-8">
 					<div class="row">
 						<div class="fillStage fix_wrapper_jq__">
-							<div class="basketPageStageTitle active">
-								<div class="pageCount">1</div>
-								<h3>Ваши конактные данные</h3>
-							</div>
 							<form action="#" id="delivery_form" method="post">
-								<section class="stageRadio">
-									<h3>Хочу оформить заказ как:</h3>
-									<label>
-										<input class="radio" type="radio" name="radio-test">
-										<span class="radio-custom"></span>
-										<span class="label_radio">Физическое лицо</span>
-									</label>
-									<label>
-										<input class="radio" type="radio"  name="radio-test">
-										<span class="radio-custom"></span>
-										<span class="label_radio">Юридическое лицо</span>
-									</label>
-								</section>
-								<section class="stageInput">
-									<label for="">
-										<span>Имя <aside>*</aside></span>
-										<input type="text" class="bordered-input" name="name" placeholder="Имя">
-									</label>
-									<label for="">
-										<span>Фамилия <aside>*</aside></span>
-										<input type="text" class="bordered-input" name="lastName" placeholder="Фамилия">
-									</label>
-									<label for="">
-										<span>Мобильный телефон</span> 
-										<input type="text" class="bordered-input" name="phoneNumber" data-mask="7(___)___-____" placeholder="Мобильный телефон ">
-									</label>
-									<label for="">
-										<span>Email <aside>*</aside></span>
-										<input type="text" class="bordered-input" name="email" placeholder="Email">
-										<aside class="extraInfo">Мы вышлем вам необходиму информацию о заказе</aside>
-									</label>
-								</section>
-								<section class="stageInput urFace">
-									<label for="">
-										<span>Название организации <aside>*</aside></span>
-										<input type="text" class="bordered-input" name="organizationName" placeholder="Название организации">
-									</label>
-									<label for="">
-										<span>Юридический адрес <aside>*</aside></span>
-										<input type="text" class="bordered-input" name="organizationUrAddress" placeholder="Юридический адрес">
-									</label>
-									<label for="">
-										<span>Фактический адрес</span> 
-										<input type="text" class="bordered-input" name="organizationPhisAddress" placeholder="Фактический адрес">
-									</label>
-									<label for="">
-										<span>ИНН <aside>*</aside></span>
-										<input type="text" class="bordered-input" name="organizationINN" placeholder="ИНН">
-									</label>
-									<label for="">
-										<span>КПП <aside>*</aside></span>
-										<input type="text" class="bordered-input" name="organizationKPP" placeholder="КПП">
-									</label>
-									<label for="">
-										<span>Наименование банка <aside>*</aside></span>
-										<input type="text" class="bordered-input" name="organizationBank" placeholder="Наименование банка">
-									</label>
-									<label for="">
-										<span>Р/С <aside>*</aside></span>
-										<input type="text" class="bordered-input" name="organizationPC" placeholder="Р/С">
-									</label>
-									<label for="">
-										<span>К/С <aside>*</aside></span>
-										<input type="text" class="bordered-input" name="organizationKC" placeholder="К/С">
-									</label>
-									<label for="">
-										<span>БИК <aside>*</aside></span>
-										<input type="text" class="bordered-input" name="organizationBIK" placeholder="БИК">
-									</label>
-								</section>
-								<input value="submit" type="submit">
+								<div id="step0">
+									<div class="basketPageStageTitle active">
+										<div class="pageCount">1</div>
+										<h3>Ваши конактные данные</h3>
+									</div>
+									<fieldset>
+										<section class="stageRadio">
+											<h3>Хочу оформить заказ как:</h3>
+											<label>
+												<input class="radio" type="radio" name="radio-test">
+												<span class="radio-custom"></span>
+												<span class="label_radio">Физическое лицо</span>
+											</label>
+											<label>
+												<input class="radio" type="radio"  name="radio-test">
+												<span class="radio-custom"></span>
+												<span class="label_radio">Юридическое лицо</span>
+											</label>
+										</section>
+										<section class="stageInput">
+											<label for="">
+												<span>Имя <aside>*</aside></span>
+												<input type="text" class="bordered-input" name="name" placeholder="Имя">
+											</label>
+											<label for="">
+												<span>Фамилия <aside>*</aside></span>
+												<input type="text" class="bordered-input" name="lastName" placeholder="Фамилия">
+											</label>
+											<label for="">
+												<span>Мобильный телефон</span> 
+												<input type="text" class="bordered-input" name="phoneNumber" data-mask="7(___)___-____" placeholder="Мобильный телефон ">
+											</label>
+											<label for="">
+												<span>Email <aside>*</aside></span>
+												<input type="text" class="bordered-input" name="email" placeholder="Email">
+												<aside class="extraInfo">Мы вышлем вам необходиму информацию о заказе</aside>
+											</label>
+										</section>
+										<section class="stageInput urFace">
+											<label for="">
+												<span>Название организации <aside>*</aside></span>
+												<input type="text" class="bordered-input" name="organizationName" placeholder="Название организации">
+											</label>
+											<label for="">
+												<span>Юридический адрес <aside>*</aside></span>
+												<input type="text" class="bordered-input" name="organizationUrAddress" placeholder="Юридический адрес">
+											</label>
+											<label for="">
+												<span>Фактический адрес</span> 
+												<input type="text" class="bordered-input" name="organizationPhisAddress" placeholder="Фактический адрес">
+											</label>
+											<label for="">
+												<span>ИНН <aside>*</aside></span>
+												<input type="text" class="bordered-input" name="organizationINN" placeholder="ИНН">
+											</label>
+											<label for="">
+												<span>КПП <aside>*</aside></span>
+												<input type="text" class="bordered-input" name="organizationKPP" placeholder="КПП">
+											</label>
+											<label for="">
+												<span>Наименование банка <aside>*</aside></span>
+												<input type="text" class="bordered-input" name="organizationBank" placeholder="Наименование банка">
+											</label>
+											<label for="">
+												<span>Р/С <aside>*</aside></span>
+												<input type="text" class="bordered-input" name="organizationPC" placeholder="Р/С">
+											</label>
+											<label for="">
+												<span>К/С <aside>*</aside></span>
+												<input type="text" class="bordered-input" name="organizationKC" placeholder="К/С">
+											</label>
+											<label for="">
+												<span>БИК <aside>*</aside></span>
+												<input type="text" class="bordered-input" name="organizationBIK" placeholder="БИК">
+											</label>
+										</section>
+									</fieldset>
+								</div>
+								<div id="step1">
+									<div class="basketPageStageTitle active">
+										<div class="pageCount">2</div>
+										<h3>Доставка</h3>
+									</div>
+									<fieldset>
+										<section class="stageRadio">
+											<h3>Выберите способ получения товара</h3>
+											<div class="radioGroup">
+												<label>
+													<input class="radio" type="radio" name="radio-test">
+													<span class="radio-custom"></span>
+													<span class="label_radio">Курьером</span>
+												</label>
+												<label>
+													<input class="radio" type="radio" name="radio-test">
+													<span class="radio-custom"></span>
+													<span class="label_radio">Постомат</span>
+												</label>
+												<label>
+													<input class="radio" type="radio" name="radio-test">
+													<span class="radio-custom"></span>
+													<span class="label_radio">Пункт выдачи</span>
+												</label>
+												<label class="disable">
+													<input class="radio" type="radio" name="radio-test">
+													<span class="radio-custom"></span>
+													<span class="label_radio">Самовывоз</span>
+												</label>
+											</div>
+										</section>
+										<section class="stageInput">
+											<div class="lineInputs">
+												<label for="">
+													<span>Улица <aside>*</aside></span>
+													<input type="text" class="bordered-input" placeholder="Улица">
+												</label>
+												<label for="">
+													<span>Дом <aside>*</aside></span>
+													<input type="text" class="bordered-input" placeholder="Дом">
+												</label>
+												<label for="">
+													<span>Корпус</span> 
+													<input type="text" class="bordered-input" placeholder="Корпус">
+												</label>
+												<label for="">
+													<span>Квартира/Офис<aside>*</aside></span>
+													<input type="text" class="bordered-input" placeholder="Квартира">
+												</label>
+											</div>
+										</section>
+										<section class="textarea">
+											<label for="">
+												<span>Добавьте комментарий к заказу</span>
+												<textarea name="" id="" class="bordered-input" placeholder="Дополнительная информация к заказу"></textarea>
+											</label>
+										</section>
+									</fieldset>
+								</div>
+								<div id="step2">
+									<div class="basketPageStageTitle active">
+										<div class="pageCount">3</div>
+										<h3>Способы оплаты</h3>
+									</div>
+									<fieldset>
+										<label>
+											<input class="radio" type="radio" name="radio-test">
+											<span class="radio-custom"></span>
+											<span class="label_radio">Наличные курьеру</span>
+										</label>
+										<label>
+											<input class="radio" type="radio" name="radio-test">
+											<span class="radio-custom"></span>
+											<span class="label_radio">Банковской картой при получении</span>
+										</label>
+										<label>
+											<input class="radio" type="radio" name="radio-test">
+											<span class="radio-custom"></span>
+											<span class="label_radio">Оплата по счету - юр. лицо или физ. лицо</span>
+										</label>
+									</fieldset>
+								</div>
+								<div id="step3">
+									<div class="basketPageStageTitle active">
+										<div class="pageCount">4</div>
+										<h3>Просмотр и подтверждение заказа</h3>
+									</div>
+									<fieldset>
+										<section class="finalInfoBasket">
+											<table>
+												<tr>
+													<td>В корзине</td>
+													<td>3 товара</td>
+												</tr>
+												<tr>
+													<td>Сумма покупки</td>
+													<td>74 388руб.</td>
+												</tr>
+												<tr>
+													<td>Курьерская доставка </td>
+													<td>350руб.</td>
+												</tr>
+											</table>
+											<div class="stagePagination">	
+												<table>
+													<tr>
+														<td>Итого</td>
+														<td class="finalCost">74 748 руб.</td>
+													</tr>
+												</table>
+											</div>
+										</section>
+									</fieldset>
+									<section class="stagePagination">
+										<button type="submit" class="btn btn-blue">Отправить</button>
+									</section>	
+								</div>
 							</form>
-							<section class="stagePagination">
-								<button class="btn btn-def">Предыдущий шаг</button>
-								<button class="btn btn-blue">Следующий шаг</button>
-							</section>						
+
 							<section class="pageStagers">
 								<div class="basketPageStageTitle">
 									<div class="pageCount">2</div>
@@ -385,8 +502,6 @@
 				</div>
 			</div>
 		</section>
-
-
 		<footer>
 			<div class="container">
 				<div class="col-md-12">

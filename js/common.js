@@ -7,29 +7,30 @@
    document.getElementById(cityName).style.display = "block";
  }
 
+
+$(document).ready(function(){
+
  $(document).ready(function(){
-
-   $(document).ready(function(){
-    if($('*').is('.sticky_fixed')){
-      var goodMain = $('.sticky_fixed').offset().top,
-      goodMainHeight = $('.sticky_fixed').height(),
-      totalGood = goodMain + goodMainHeight,
-      body = $('body').height(),
-      totalResut = body - totalGood;
-      $(".sticky_fixed").sticky({
-        topSpacing:20, 
-        bottomSpacing: totalResut,
-      });
-    }
-  });
-
-   $(document).ready(function(){
-    $('.tablinks:first').addClass('btn-active');
-    $('.tablinks').click(function(){
-      $('.tablinks').removeClass('btn-active');
-      $(this).addClass('btn-active');
+  if($('*').is('.sticky_fixed')){
+    var goodMain = $('.sticky_fixed').offset().top,
+    goodMainHeight = $('.sticky_fixed').height(),
+    totalGood = goodMain + goodMainHeight,
+    body = $('body').height(),
+    totalResut = body - totalGood;
+    $(".sticky_fixed").sticky({
+      topSpacing:20, 
+      bottomSpacing: totalResut,
     });
+  }
+});
+
+ $(document).ready(function(){
+  $('.tablinks:first').addClass('btn-active');
+  $('.tablinks').click(function(){
+    $('.tablinks').removeClass('btn-active');
+    $(this).addClass('btn-active');
   });
+});
 
   //SVG Fallback
   if(!Modernizr.svg) {
@@ -201,78 +202,87 @@ $('#delivery_form').validate({
     organizationINN : {
      required: true,
      minlength:10,
-    },
-    email : {
-      required: true,
-    },
-    organizationBank:{
-      required: true,
-    },
-    organizationPC:{
-      required: true,
-    },
-    organizationKC:{
-      required: true,
-    },
-    organizationBIK:{
-      required: true,
-    },
-    organizationKPP : {
-      required: true,
-    },
-    organizationUrAddress : {
-       required: true,
-    },
-    organizationPhisAddress : {
-      required: true,
-    },
+   },
+   email : {
+    required: true,
   },
-  messages: {
-    name: {
-      required: required,
-      minlength: "Введите не менее 2-х символов в поле 'Имя'"
-    },
-    lastName: {
-      required: required,
-      minlength: "Введите не менее 2-х символов в поле 'Фамилия'"
-    },
-    email: {
-      required: required,
-      email: "Необходим формат адреса email"  
-    },
-    phoneNumber: {
-      required : required,
-      minlength: "Введите телефон в верном формате",
-    },
-    organizationName:{
-      required : required,
-    },
-    organizationUrAddress : {
-      required : required,
-    },
-    organizationPhisAddress: {
-      required : required,
-    },
-    organizationINN: {
-      required : required,
-      minlength: "Проверьте количество цифр"
-    },
-    organizationKPP : {
-      required: required
-    },
-    organizationBank:{
-      required: required
-    },
-    organizationPC:{
-      required: required
-    },
-    organizationKC:{
-      required: required
-    },
-    organizationBIK:{
-      required: required
-    },
-  }
+  organizationBank:{
+    required: true,
+  },
+  organizationPC:{
+    required: true,
+  },
+  organizationKC:{
+    required: true,
+  },
+  organizationBIK:{
+    required: true,
+  },
+  organizationKPP : {
+    required: true,
+  },
+  organizationUrAddress : {
+   required: true,
+ },
+ organizationPhisAddress : {
+  required: true,
+},
+},
+messages: {
+  name: {
+    required: required,
+    minlength: "Введите не менее 2-х символов в поле 'Имя'"
+  },
+  lastName: {
+    required: required,
+    minlength: "Введите не менее 2-х символов в поле 'Фамилия'"
+  },
+  email: {
+    required: required,
+    email: "Необходим формат адреса email"  
+  },
+  phoneNumber: {
+    required : required,
+    minlength: "Введите телефон в верном формате",
+  },
+  organizationName:{
+    required : required,
+  },
+  organizationUrAddress : {
+    required : required,
+  },
+  organizationPhisAddress: {
+    required : required,
+  },
+  organizationINN: {
+    required : required,
+    minlength: "Проверьте количество цифр"
+  },
+  organizationKPP : {
+    required: required
+  },
+  organizationBank:{
+    required: required
+  },
+  organizationPC:{
+    required: required
+  },
+  organizationKC:{
+    required: required
+  },
+  organizationBIK:{
+    required: required
+  },
+}
+});
+
+$("#delivery_form").formToWizard({
+  submitButton: "test",
+  prevClasses: 'button btn-def',
+  nextClasses: 'button btn-blue',
+  strPrev: 'Предыдущий шаг',
+  strNext: 'Следующий шаг',
+  strStep: 'Step'
 });
 
 $(".anotherPhoto").on("click", "a", function () {
