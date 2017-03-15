@@ -4312,9 +4312,23 @@ a, a:hover {
 .fillStage .stageInput label :-ms-input-placeholder {
     color: #d4d7e1;
 }
-.fillStage .stageInput label span {
+.fillStage .stageInput label span, .calculatorContent label span {
     display: inline-block;
-    width: 30%}
+    width: 30%;
+}
+.fillStage .stageInput .calculatorContent .dropdown{
+    display: inline-block;  
+}
+.fillStage .stageInput .calculatorContent .dropdown .selected{
+    width: 80%;
+    font-size: .920em;
+}
+.fillStage .stageInput .calculatorContent aside{
+    padding: 0;
+    border: none;
+    margin: 0; 
+    background: none;
+}
 .fillStage .stageInput label span aside {
     display: inline-block;
     color: #FF5027;

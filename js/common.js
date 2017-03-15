@@ -181,32 +181,47 @@ document.querySelector('.js-slideout-toggle').addEventListener('click', function
 
 jQuery.validator.addMethod("matches", function(value, element) {
   return this.optional(element) || /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/.test(value);
-}); 
+},"Введите не менее 10-ти символов"); 
 var required = 'Поле обязательно к заполнению';
 
 $('#delivery_form').validate({
   rules: {
-    name: {
-      required: true,
-      minlength: 2
-    },
-    lastName: {
-      required: true,
-      minlength: 2
-    },
-    phoneNumber: {
-      required: true,
-      matches: true,
-      minlength:10,
-    },
-    organizationINN : {
-     required: true,
-     minlength:10,
-   },
-   email : {
+  name: {
+    required: true,
+    minlength: 2,
+  },
+  lastName: {
+    required: true,
+    minlength: 2,
+  },
+  phoneNumber: {
+    required: true,
+    matches: true,
+    minlength:10,
+  },
+  organizationINN : {
+   required: true,
+   minlength:10,
+  },
+  selectCountry : {
+   required: true,
+  },
+  email : {
     required: true,
   },
-  organizationBank:{
+  nameStreet : {
+    required: true,
+    minlength: 1,
+  },
+  numHouse : {
+    required: true,
+    minlength: 1,
+  },
+  numOffice : {
+    required: true,
+    minlength: 1,
+  },
+  /*organizationBank:{
     required: true,
   },
   organizationPC:{
@@ -223,29 +238,43 @@ $('#delivery_form').validate({
   },
   organizationUrAddress : {
    required: true,
- },
- organizationPhisAddress : {
+  },
+  organizationPhisAddress : {
   required: true,
-},
+  },*/
 },
 messages: {
   name: {
     required: required,
-    minlength: "Введите не менее 2-х символов в поле 'Имя'"
+    minlength: "Введите не менее 2-х символов",
   },
   lastName: {
     required: required,
-    minlength: "Введите не менее 2-х символов в поле 'Фамилия'"
+    minlength: "Введите не менее 2-х символов",
   },
   email: {
     required: required,
-    email: "Необходим формат адреса email"  
+    minlength: "Необходим формат адреса email",
   },
   phoneNumber: {
-    required : required,
-    minlength: "Введите телефон в верном формате",
+    required : "Введите телефон в формате 7(###)###-##-##",
   },
-  organizationName:{
+  selectCountry: {
+    required : required,
+  },
+  nameStreet: {
+    required: required,
+    minlength: "Введите не менее 2-х символов",
+  },
+  numHouse: {
+    required : required,
+    minlength : "Введите не менее 1-го символа",
+  },
+  numOffice: {
+    required : required,
+    minlength : "Введите не менее 1-го символа",
+  },
+  /*organizationName:{
     required : required,
   },
   organizationUrAddress : {
@@ -272,11 +301,43 @@ messages: {
   },
   organizationBIK:{
     required: required
-  },
+  },*/
 }
 });
 
-$("#delivery_form").formToWizard({
+$( function() {
+  var $signupForm = $( '#delivery_form' );
+  
+  $signupForm.validate({errorElement: 'em'});
+  
+  $signupForm.formToWizard({
+    submitButton:       '',
+    showProgress:       false,
+    showStepNo:         true,
+    validateBeforeNext: true,
+    progress:           null,
+    nextBtnName:        'Следующий шаг',
+    prevBtnName:        'Предыдущий шаг',
+    buttonTag:          'button',
+    buttonsContaner:    'stagePagination',
+    nextBtnClass:       'btn btn-blue',
+    prevBtnClass:       'btn btn-def',
+    validateBeforeNext: function(form, step) {
+        var stepIsValid = true;
+        var validator = form.validate();
+        $(':input', step).each( function(index) {
+            var xy = validator.element(this);
+            stepIsValid = stepIsValid && (typeof xy == 'undefined' || xy);
+        });
+        return stepIsValid;
+    },
+    progress: function (i, count) {
+        $('#progress-complete').width(''+(i/count*100)+'%');
+    }
+  });
+});
+
+$("#delivery_form2").formToWizard({
   submitButton: "test",
   prevClasses: 'button btn-def',
   nextClasses: 'button btn-blue',
